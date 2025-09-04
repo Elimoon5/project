@@ -6,11 +6,11 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != 'LoggedIn') {
 }
 ?>
 <html>
-	<style>
-
-	</style>
-		<link rel="stylesheet" href="../Final/everything.css">
 	<head>
+		<style>
+
+		</style>
+		<link rel="stylesheet" href="everything.css">
 	</head>
 	<body>
 		<div class="nav">
@@ -23,32 +23,26 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != 'LoggedIn') {
 			<a href="addUser.php">add User</a>
 			<a href="logout.php">Logout</a>
 		</div><br>
-	<div>
-	<h1>Videos</h1>
-		<div>
-			<label id="dropdown" for="falloutvids">Choose a video:</label>
-			<select name="vids" id="vids">
-			  <option value="vid1">Fallout Trailer</option>
-			  <option value="vid2">Opening Scene</option>
-			  <option value="vid3">Fallout Funny Clips</option>
-			</select><br>
-			<iframe id="trailer" width="300" height="200" src="https://www.youtube.com/embed/V-mugKDQDlg?si=ylL15wAs2iwH097s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			<iframe id="openingscene" width="300" height="200" src="https://www.youtube.com/embed/hJjIf7nwx6U?si=DlORBdOQ5b3thBuO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			<iframe id="funnyclips" width="300" height="200" src="https://www.youtube.com/embed/sCHRqYGLNDU?si=xc4ec-HVUQVIfbkb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		</div>
-	</div>
+		<h1>About Fallout</h1>
+		<ol>
+			<li class="text">Lucy MacLean</li>
+			<li>Maximus</li>
+			<li class="text">The Ghoul</li>
+			<li>Barb Howard</li>
+		</ol>
+		<p id="info">
+			Fallout is a TV series about a worldwide nuclear war. In this show, Lucy must go out of 
+			her pretected bunker to find her captured father. on her adventure, she meets many new friends and 
+			learns some valuable lessons.
+		</p>
+		<p>
+		The reason I chose this media is because of how entertaining the show was. I watched the whole season 
+		way too fast and was very dissapointed when it ended because I wanted it to continue. There is also a game of Fallout which I also 
+		want to play.
+		</p>
+		<img src="Falloutphoto.jpg" alt="Fallout image" width="350px"> 
 		<script>
-			function showVid() {
-				document.getElementById("vid1").style.display = "none";
-				document.getElementById("vid2").style.display = "none";
-				document.getElementById("vid3").style.display = "none";
-
-				var selectedVideo = document.getElementById("vids").value;
-
-				if (selectedVideo) {
-					document.getElementById(selectedVideo).style.display = "block";
-				}
-			}
+			
 		</script>
-	</body>
+	</body>	
 </html>
