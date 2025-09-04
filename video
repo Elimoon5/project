@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != 'LoggedIn') {
-    echo '<a href="login.php">You are not logged in. Login here</a>';
-    exit;
-}
-?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<style>
